@@ -1,9 +1,9 @@
 start_time        : 1634200824
-last_update       : 1634200884
+last_update       : 1634201305
 fuzzer_pid        : 131911
-cycles_done       : 1865
-execs_done        : 478958
-execs_per_sec     : 7969.13
+cycles_done       : 14948
+execs_done        : 3828110
+execs_per_sec     : 7957.34
 paths_total       : 1
 paths_favored     : 1
 paths_found       : 0
@@ -20,7 +20,7 @@ unique_hangs      : 0
 last_path         : 0
 last_crash        : 0
 last_hang         : 0
-execs_since_crash : 478958
+execs_since_crash : 3828110
 exec_timeout      : 20
 afl_banner        : std-image
 afl_version       : 2.57b
