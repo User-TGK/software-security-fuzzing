@@ -7,6 +7,7 @@
 ```
 
 ```Console
+sudo apt install screen
 vi run.sh
 modify afl path to your own path
 vi status.sh
