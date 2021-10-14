@@ -1,0 +1,1 @@
+../AFL/afl-gcc    CMakeFiles/std-image.dir/main.c.o  -o std-image  -lm 
