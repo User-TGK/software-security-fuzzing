@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #define STB_IMAGE_IMPLEMENTATION
-#include "stb_image/stb_image.h"
+#include "stb_image_2016.h"
 
 int main(int argc, char **argv)
 {
