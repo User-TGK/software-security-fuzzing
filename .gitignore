@@ -5,6 +5,12 @@
 build
 .vscode
 
+### afl ###
+
+findings
+crashes
+hangs
+
 ### C ###
 # Prerequisites
 *.d
