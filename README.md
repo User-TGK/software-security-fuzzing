@@ -1,4 +1,5 @@
 # Compilation
+[link to minimized image test set](https://lcamtuf.coredump.cx/afl/demo/)
 
 ```
 > mkdir build && cd build

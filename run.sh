@@ -1,4 +1,4 @@
-for i in {0..8}
+for i in {0..16}
 do
-	screen -dmS fuzzer$i /bin/bash -c "../AFL/afl-fuzz -i test-input -o findings -M fuzzer$i -- build/stb-image @@"
+	screen -dmS fuzzer$i /bin/bash -c "sudo afl-fuzz -i afl_testcases/png/edges-only/images/ -o findings -M fuzzer$i -- build/stb-image @@"
 done
