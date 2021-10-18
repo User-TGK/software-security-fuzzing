@@ -9,6 +9,14 @@
 RADAMSA=../radamsa/bin/radamsa
 WRAPPER=build/stb-image
 
+if [ ! -f "$RADAMSA" ]; then
+    echo "Error: $RADAMSA does not exist"
+    exit 1
+elif [ ! -f "$WRAPPER" ]; then
+    echo "Error: $WRAPPER does not exist"
+    exit 1
+fi
+
 TIMESTAMP=$(date +"%Y%m%d%H%M%S")
 OUTDIR="radamsa-output/$TIMESTAMP"
 
