@@ -40,7 +40,7 @@ fi
 
 output_file()
 {
-    echo "$OUTDIR/$seed_$1.$infile.fuzzed"
+    echo "$OUTDIR/$seed-$1.$infile.fuzzed"
 }
 
 # Seed
