@@ -11,6 +11,10 @@ findings
 crashes
 hangs
 
+### Radamsa ###
+
+radamsa-output
+
 ### C ###
 # Prerequisites
 *.d
