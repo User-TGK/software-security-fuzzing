@@ -1,0 +1,109 @@
+../AFLplusplus/afl-whatsup status check tool for afl-fuzz by Michal Zalewski
+
+Individual fuzzers
+==================
+
+>>> fuzzer0 (11 days, 11 hrs) fuzzer PID: 2265 <<<
+
+  last_path       : 3 hours, 11 minutes
+  last_crash      : 3 days, 23 hours
+  last_hang       : 2 days, 11 hours
+  cycles_wo_finds : [93m46(B[m
+  cpu usage 1.8%, memory usage 1.6%
+  cycle 3781, lifetime speed 193 execs/sec, path 6378/6471 (98%)
+  pending 31/7, coverage 3.83%, crash count 89 (!)
+
+>>> fuzzer1 (11 days, 11 hrs) fuzzer PID: 2266 <<<
+
+  last_path       : 3 hours, 10 minutes
+  last_crash      : 2 days, 18 hours
+  last_hang       : 2 days, 2 hours
+  cycles_wo_finds : [91m53(B[m
+  cpu usage 1.8%, memory usage 1.5%
+  cycle 4124, lifetime speed 193 execs/sec, path 4200/6454 (65%)
+  pending 25/7, coverage 3.83%, crash count 90 (!)
+
+>>> fuzzer2 (11 days, 11 hrs) fuzzer PID: 2268 <<<
+
+  last_path       : 3 hours, 10 minutes
+  last_crash      : 13 hours, 3 minutes
+  last_hang       : 5 hours, 15 minutes
+  cycles_wo_finds : [91m56(B[m
+  cpu usage 1.8%, memory usage 1.6%
+  cycle 4366, lifetime speed 193 execs/sec, path 6238/6460 (96%)
+  pending 21/9, coverage 3.83%, crash count 85 (!)
+
+>>> fuzzer3 (11 days, 11 hrs) fuzzer PID: 2274 <<<
+
+  last_path       : 3 hours, 12 minutes
+  last_crash      : 3 days, 12 hours
+  last_hang       : 4 hours, 0 minutes
+  cycles_wo_finds : [91m59(B[m
+  cpu usage 1.8%, memory usage 1.5%
+  cycle 4194, lifetime speed 193 execs/sec, path 1123/6452 (17%)
+  pending 24/5, coverage 3.83%, crash count 90 (!)
+
+>>> fuzzer4 (11 days, 11 hrs) fuzzer PID: 2278 <<<
+
+  last_path       : 3 hours, 12 minutes
+  last_crash      : 4 days, 22 hours
+  last_hang       : 3 days, 12 hours
+  cycles_wo_finds : [91m53(B[m
+  cpu usage 1.8%, memory usage 1.6%
+  cycle 4136, lifetime speed 193 execs/sec, path 10/6461 (0%)
+  pending 19/9, coverage 3.83%, crash count 99 (!)
+
+>>> fuzzer5 (11 days, 11 hrs) fuzzer PID: 2284 <<<
+
+  last_path       : 3 hours, 12 minutes
+  last_crash      : 3 days, 22 hours
+  last_hang       : 3 days, 0 hours
+  cycles_wo_finds : [91m65(B[m
+  cpu usage 1.8%, memory usage 1.5%
+  cycle 5053, lifetime speed 193 execs/sec, path 4389/6457 (67%)
+  pending 21/5, coverage 3.83%, crash count 95 (!)
+
+>>> fuzzer6 (11 days, 11 hrs) fuzzer PID: 2289 <<<
+
+  last_path       : 3 hours, 10 minutes
+  last_crash      : 3 days, 8 hours
+  last_hang       : 8 hours, 52 minutes
+  cycles_wo_finds : [91m52(B[m
+  cpu usage 1.8%, memory usage 1.6%
+  cycle 4129, lifetime speed 193 execs/sec, path 1031/6459 (15%)
+  pending 22/6, coverage 3.83%, crash count 93 (!)
+
+>>> fuzzer7 (11 days, 11 hrs) fuzzer PID: 2294 <<<
+
+  last_path       : 3 hours, 8 minutes
+  last_crash      : 3 days, 4 hours
+  last_hang       : 3 days, 1 hours
+  cycles_wo_finds : [91m51(B[m
+  cpu usage 1.8%, memory usage 1.5%
+  cycle 4005, lifetime speed 193 execs/sec, path 2156/6482 (33%)
+  pending 20/7, coverage 3.83%, crash count 85 (!)
+
+>>> fuzzer8 (11 days, 11 hrs) fuzzer PID: 2299 <<<
+
+  last_path       : 3 hours, 11 minutes
+  last_crash      : 3 days, 3 hours
+  last_hang       : 1 days, 2 hours
+  cycles_wo_finds : [91m56(B[m
+  cpu usage 1.8%, memory usage 1.6%
+  cycle 4369, lifetime speed 193 execs/sec, path 3494/6452 (54%)
+  pending 24/8, coverage 3.83%, crash count 89 (!)
+
+Summary stats
+=============
+
+       Fuzzers alive : 9
+      Total run time : 103 days, 8 hours
+         Total execs : 1730 millions
+    Cumulative speed : 1737 execs/sec
+       Average speed : 193 execs/sec
+       Pending paths : 207 faves, 63 total
+  Pending per fuzzer : 23 faves, 7 total (on average)
+       Crashes found : 815 locally unique
+Cycles without finds : 46/53/56/59/53/65/52/51/56
+  Time without finds : 3 hours, 8 minutes
+
