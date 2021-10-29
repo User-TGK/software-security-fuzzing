@@ -7,6 +7,11 @@
 ```
 
 ```Console
+./run_crashes.sh 2>&1 | tee crashes.txt
+./run_hangs.sh 2>&1 | tee hangs.txt
+
+
+
 sudo apt install screen
 vi run.sh
 modify afl path to your own path

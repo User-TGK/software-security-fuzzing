@@ -1,0 +1,99 @@
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20664 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20666 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20668 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20670 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20672 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20674 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20676 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20678 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20680 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20682 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20684 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20686 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20688 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20690 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20692 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20694 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20696 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20698 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20700 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20702 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20704 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20706 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20708 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20710 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20712 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20714 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20716 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20718 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20720 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20722 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20724 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20726 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20728 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20730 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20732 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20734 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20736 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20738 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20740 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20742 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20744 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20746 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20748 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20750 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20752 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20754 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20756 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20758 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
+./run_crashes.sh: line 3: 20760 Aborted                 (core dumped) ./build/stb-image "$i"
+stb-image: /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1672: int stbi__extend_receive(stbi__jpeg *, int): Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
