@@ -1,4 +1,4 @@
 # environment variables:
 AFL_KILL_SIGNAL=9
 # command line:
-'../AFLplusplus/afl-fuzz' '-i' 'afl_testcases' '-o' 'findings++' '-M' 'fuzzer3' '--' 'build/stb-image' '@@'
+'../AFLplusplus/afl-fuzz' '-i' 'afl_testcases/jpeg_turbo/edges-only' '-o' 'findings++' '-M' 'fuzzer3' '--' 'build/stb-image' '@@'
