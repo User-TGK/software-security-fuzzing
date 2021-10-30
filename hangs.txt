@@ -1,0 +1,327 @@
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26092==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7fd66c910010 (pc 0x00000043648a bp 0x7fd5e8910010 sp 0x7ffdb083feb0 T26092)
+==26092==The signal is caused by a READ memory access.
+    #0 0x43648a in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x43648a in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7fd65493d0b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26092==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26098==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f437a0f2298 (pc 0x000000436416 bp 0x00007c000022 sp 0x7ffd106d34b0 T26098)
+==26098==The signal is caused by a READ memory access.
+    #0 0x436416 in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x436416 in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f437211f0b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26098==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26102==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f2936d2f010 (pc 0x00000043648a bp 0x7f287d92f010 sp 0x7ffd2c234e20 T26102)
+==26102==The signal is caused by a READ memory access.
+    #0 0x43648a in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x43648a in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f28b235c0b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26102==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26105==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f1c713da010 (pc 0x000000436416 bp 0x00007bfc00fe sp 0x7ffd1784ed50 T26105)
+==26105==The signal is caused by a READ memory access.
+    #0 0x436416 in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x436416 in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f1c693870b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26105==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26111==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f35ac16f010 (pc 0x000000436416 bp 0x00007bfffffe sp 0x7ffe07221b30 T26111)
+==26111==The signal is caused by a READ memory access.
+    #0 0x436416 in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x436416 in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f35a419c0b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26111==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26113==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f8c425ae010 (pc 0x000000436416 bp 0x000073fffffe sp 0x7ffdbc427a80 T26113)
+==26113==The signal is caused by a READ memory access.
+    #0 0x436416 in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x436416 in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f8c2a5db0b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26113==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26115==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7fcece5c6010 (pc 0x000000436416 bp 0x000073fffffe sp 0x7ffda80ccc20 T26115)
+==26115==The signal is caused by a READ memory access.
+    #0 0x436416 in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x436416 in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7fceb65f30b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26115==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26125==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f68f1d07010 (pc 0x00000043648a bp 0x7f6881487010 sp 0x7ffc45c20b10 T26125)
+==26125==The signal is caused by a READ memory access.
+    #0 0x43648a in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x43648a in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f68a68340b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26125==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26128==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f6a84cd5010 (pc 0x00000043648a bp 0x7f6a44cd5010 sp 0x7ffd6d3b3150 T26128)
+==26128==The signal is caused by a READ memory access.
+    #0 0x43648a in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x43648a in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f6a44d020b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26128==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26130==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f9dfceb8810 (pc 0x000000436416 bp 0x00007bfffbfe sp 0x7ffd6bd27a90 T26130)
+==26130==The signal is caused by a READ memory access.
+    #0 0x436416 in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x436416 in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f9df4ee50b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26130==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26132==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f241a038810 (pc 0x00000043648a bp 0x7f23e1827c10 sp 0x7ffdb8b3be80 T26132)
+==26132==The signal is caused by a READ memory access.
+    #0 0x43648a in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x43648a in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f23e18610b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26132==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26135==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f8f6d7603a4 (pc 0x000000436416 bp 0x00007c000022 sp 0x7ffd851d7fb0 T26135)
+==26135==The signal is caused by a READ memory access.
+    #0 0x436416 in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x436416 in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f8f6578d0b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26135==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26145==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f8e13cdac10 (pc 0x000000436416 bp 0x0000777773fe sp 0x7ffdde61d6b0 T26145)
+==26145==The signal is caused by a READ memory access.
+    #0 0x436416 in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x436416 in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f8e02bf60b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26145==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26151==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7ff9822d2010 (pc 0x000000436416 bp 0x00007bfffffe sp 0x7ffd742c2f80 T26151)
+==26151==The signal is caused by a READ memory access.
+    #0 0x436416 in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x436416 in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7ff97a2ff0b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26151==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26153==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f528fd7e010 (pc 0x000000436416 bp 0x000077fffffe sp 0x7fff1b6c3470 T26153)
+==26153==The signal is caused by a READ memory access.
+    #0 0x436416 in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x436416 in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f527fdab0b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26153==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26163==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f01fd50b010 (pc 0x000000436416 bp 0x000077fffffe sp 0x7ffea4b53850 T26163)
+==26163==The signal is caused by a READ memory access.
+    #0 0x436416 in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x436416 in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f01ed5380b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26163==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26165==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f99dd4ec010 (pc 0x00000043648a bp 0x7f99654ec010 sp 0x7ffdb33e2790 T26165)
+==26165==The signal is caused by a READ memory access.
+    #0 0x43648a in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x43648a in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f99655190b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26165==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26167==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7fba2c66c010 (pc 0x000000436421 bp 0x00007ffbfffe sp 0x7fff24f603c0 T26167)
+==26167==The signal is caused by a WRITE memory access.
+    #0 0x436421 in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:45
+    #1 0x436421 in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7fba2c6190b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:45 in stbi__bmp_load
+==26167==ABORTING
+Error opening input file findings++/fuzzer6/hangs/*
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26181==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f532753c010 (pc 0x00000043648a bp 0x7f52b757c010 sp 0x7ffd072a2f30 T26181)
+==26181==The signal is caused by a READ memory access.
+    #0 0x43648a in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x43648a in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f52b75a90b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26181==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26184==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f21c77a5a98 (pc 0x000000436421 bp 0x00007febfc22 sp 0x7ffce4eb7fd0 T26184)
+==26184==The signal is caused by a WRITE memory access.
+    #0 0x436421 in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:45
+    #1 0x436421 in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f21c75520b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:45 in stbi__bmp_load
+==26184==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26203==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f4892f46c10 (pc 0x00000043648a bp 0x7f4802f85c10 sp 0x7ffda2473710 T26203)
+==26203==The signal is caused by a READ memory access.
+    #0 0x43648a in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x43648a in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7f484af730b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26203==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26216==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7fad09bb1010 (pc 0x00000043648a bp 0x7facd9bd4010 sp 0x7fff11cb6320 T26216)
+==26216==The signal is caused by a READ memory access.
+    #0 0x43648a in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x43648a in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7facddbd00b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26216==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26220==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7feef674f010 (pc 0x00000043648a bp 0x7feef278a410 sp 0x7ffc6190f430 T26220)
+==26220==The signal is caused by a READ memory access.
+    #0 0x43648a in stbi__bmp_load /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32
+    #1 0x43648a in stbi__load_main /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:947:35
+    #2 0x42c043 in stbi__load_flip /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:980:28
+    #3 0x42c043 in stbi_load_from_memory /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:1069:11
+    #4 0x42c043 in main /home/twanbolwerk/software-security-fuzzing/main.c:59:26
+    #5 0x7feef58ac0b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x40479d in _start (/home/twanbolwerk/software-security-fuzzing/build/stb-image+0x40479d)
+
+UndefinedBehaviorSanitizer can not provide additional info.
+SUMMARY: UndefinedBehaviorSanitizer: SEGV /home/twanbolwerk/software-security-fuzzing/stb_image/stb_image_2016.h:4946:32 in stbi__bmp_load
+==26220==ABORTING
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
+==26223==ERROR: UndefinedBehaviorSanitizer: SEGV on unknown address 0x7f86e3c09000 (pc 0x00000043641c bp 0x00007800003e sp 0x7ffce390e330 T26223)
+==26223==The signal is caused by a WRITE memory access.
+UndefinedBehaviorSanitizer:DEADLYSIGNAL
