@@ -1,1 +1,1 @@
-../AFL/afl-whatsup findings
+afl-whatsup findings
