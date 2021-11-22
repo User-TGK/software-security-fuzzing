@@ -1,0 +1,25 @@
+start_time     : 1636641403
+last_update    : 1637471682
+fuzzer_pid     : 5171
+cycles_done    : 7
+execs_done     : 97984062
+execs_per_sec  : 156.37
+paths_total    : 1993
+paths_favored  : 268
+paths_found    : 1916
+paths_imported : 0
+max_depth      : 16
+cur_path       : 345
+pending_favs   : 0
+pending_total  : 866
+variable_paths : 0
+bitmap_cvg     : 5.09%
+unique_crashes : 0
+unique_hangs   : 398
+last_path      : 1637461568
+last_crash     : 0
+last_hang      : 1637448490
+exec_timeout   : 20
+afl_banner     : stb-image
+afl_version    : 1.96b
+command_line   : afl-fuzz -i test-input/pngsuite/primary/ -o output_live_fuzz ./build/stb-image @@
