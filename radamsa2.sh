@@ -1,29 +1,25 @@
 #!/bin/bash
 
-mkdir -p radamsa_output/fuzz/
-mkdir -p radamsa_output/crash/
-
-run_until_crash()
-{
-    while true; do
-        echo "Iteration: $1, mutations: $(($1 * $COUNT))"
-        ../radamsa/bin/radamsa -o radamsa_output/fuzz/%n-%s.fuzzed -n 1000 afl_testcases/jpeg_turbo/edges-only/images/*
-        FILES=radamsa_output/fuzz/*
-        for f in $FILES; do
-            output=$(build/stb-image $f 2>&1)
-            if [ $? -gt 127 ]; then
-                echo "$f caused a crash"
-                mkdir -p radamsa_output/crash/$1/
-                echo "$output" > "radamsa_output/crash/$1/crash.txt"
-                cp $f radamsa_output/crash/$1/
-            fi
-        done
-    done
-}
-
+PREFIX=$1
+BINARY=$2
 COUNT=$(ls afl_testcases/jpeg_turbo/edges-only/images/ | wc -l)
 i=0
+
+mkdir -p radamsa_output/$PREFIX/fuzz/
+mkdir -p radamsa_output/$PREFIX/crash/
+
 while true; do
-    run_until_crash $i
-    i=$((i + 1))
+    echo "Iteration: $i, mutations: $(($i * $COUNT * 1000))"
+    ../radamsa/bin/radamsa -o radamsa_output/$PREFIX/fuzz/%n.fuzzed -n 1000 afl_testcases/jpeg_turbo/edges-only/images/*
+    files=radamsa_output/$PREFIX/fuzz/*
+    for f in $files; do
+        output=$($BINARY $f 2>&1)
+        if [ $? -gt 127 ]; then
+            echo "$f caused a crash"
+            name=$(basename $f)
+            cp $f radamsa_output/$PREFIX/crash/$i-$name.fuzz
+            echo >radamsa_output/$PREFIX/crash/$i-$name.txt $output
+        fi
+    done
+    i=$(($i + 1))
 done
