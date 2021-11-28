@@ -1,35 +1,14 @@
-# radamsa.sh <infile> <seed>
-#
-# Seed should be a number, eg. `$RANDOM`.
-#
-# Run Radamsa in a loop to generate fuzzed files until the stb-image wrapper program crashes;
-# the malformed file is then collected under `./radamsa-output/`.
-# This is repeated forever.
-
 RADAMSA=../radamsa/bin/radamsa
 WRAPPER=build/stb-image
 
-if [ ! -f "$RADAMSA" ]; then
-    echo "Error: $RADAMSA does not exist"
-    exit 1
-elif [ ! -f "$WRAPPER" ]; then
-    echo "Error: $WRAPPER does not exist"
-    exit 1
-fi
-
 TIMESTAMP=$(date +"%Y%m%d%H%M%S")
 OUTDIR="radamsa-output/$TIMESTAMP"
-
-#################################################
-# Argument parsing
-#################################################
 
 if [ $# -lt 2 ]; then
     echo "Usage: radamsa.sh <infile> <seed>"
     exit 1
 fi
 
-# Input and output files
 inpath="$1"
 infile=$(basename $inpath)
 
@@ -43,14 +22,8 @@ output_file()
     echo "$OUTDIR/$seed-$1.$infile.fuzzed"
 }
 
-# Seed
 seed=$2
 
-#################################################
-# Main script
-#################################################
-
-# Run Radamsa until it crashes
 run_until_crash()
 {
     local _sequential_seed="$seed$1"
@@ -65,15 +38,9 @@ run_until_crash()
     echo "$_outfile produced a crash"
 }
 
-# Main loop; do `run_until_crash` forever, collecting results in `$OUTDIR`
-main_loop()
-{
-    local _i=0
-    while true; do
-        echo "Iteration $_i: $(output_file $_i)"
-        run_until_crash $_i
-        i=$((i+1))
-    done
-}
-
-main_loop
+i=0
+while true; do
+    echo "Iteration $i: $(output_file $i)"
+    run_until_crash $i
+    i=$(($i+1))
+done

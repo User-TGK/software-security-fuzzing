@@ -2,14 +2,13 @@
 
 PREFIX=$1
 BINARY=$2
-COUNT=$(ls afl_testcases/jpeg_turbo/edges-only/images/ | wc -l)
-i=0
 
 mkdir -p radamsa_output/$PREFIX/fuzz/
 mkdir -p radamsa_output/$PREFIX/crash/
 
+i=0
 while true; do
-    echo "Iteration: $i, mutations: $(($i * $COUNT * 1000))"
+    echo "Iteration: $i, mutations: $(($i * 1000))"
     ../radamsa/bin/radamsa -o radamsa_output/$PREFIX/fuzz/%n.fuzzed -n 1000 afl_testcases/jpeg_turbo/edges-only/images/*
     files=radamsa_output/$PREFIX/fuzz/*
     for f in $files; do
