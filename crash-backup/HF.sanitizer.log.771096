@@ -1,0 +1,56 @@
+=================================================================
+==771096==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x602000000011 at pc 0x0000004d4618 bp 0x7fffffffc770 sp 0x7fffffffc768
+READ of size 1 at 0x602000000011 thread T0
+    #0 0x4d4617 in stbi__tga_load (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4d4617)
+    #1 0x4ca1bd in stbi__load_main (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4ca1bd)
+    #2 0x4c4af1 in stbi__load_flip (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c4af1)
+    #3 0x4c51f4 in stbi_load_from_memory (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c51f4)
+    #4 0x4c9ae9 in main (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c9ae9)
+    #5 0x7ffff7c470b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #6 0x41c5ed in _start (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x41c5ed)
+
+0x602000000011 is located 0 bytes to the right of 1-byte region [0x602000000010,0x602000000011)
+allocated by thread T0 here:
+    #0 0x494d2d in malloc (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x494d2d)
+    #1 0x4c730e in stbi__malloc (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c730e)
+    #2 0x4d3f85 in stbi__tga_load (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4d3f85)
+    #3 0x4ca1bd in stbi__load_main (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4ca1bd)
+    #4 0x4c4af1 in stbi__load_flip (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c4af1)
+    #5 0x4c51f4 in stbi_load_from_memory (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c51f4)
+    #6 0x4c9ae9 in main (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c9ae9)
+    #7 0x7ffff7c470b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4d4617) in stbi__tga_load
+Shadow bytes around the buggy address:
+  0x0c047fff7fb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c047fff7fc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c047fff7fd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c047fff7fe0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c047fff7ff0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c047fff8000: fa fa[01]fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fff8010: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fff8020: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fff8030: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fff8040: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fff8050: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+  Shadow gap:              cc
+==771096==ABORTING

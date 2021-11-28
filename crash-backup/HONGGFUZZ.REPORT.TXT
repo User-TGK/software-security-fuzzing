@@ -1,0 +1,272 @@
+=====================================================================
+TIME: 2021-11-20.14:18:57
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 1 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : stb-image ___FILE___ 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: deac79d5bbb086ae7d133c6d9124088f.000001f8.honggfuzz.cov
+FUZZ_FNAME: /home/ties/ru/SS/assignment_2/software-security-fuzzing/build/SIGABRT.PC.7ffff7c6618b.STACK.1ac4fd332f.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 129634
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c6618b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000001ac4fd332f
+STACK:
+ <0x00007ffff7c45859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x00007ffff7c45729> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x00007ffff7c56f36> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x00000000004f3ea2> [func:stbi__extend_receive file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004efaf8> [func:stbi__jpeg_decode_block file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004ece69> [func:stbi__parse_entropy_coded_data file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004e8c9f> [func:stbi__decode_jpeg_image file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004e545a> [func:load_jpeg_image file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004ca4de> [func:stbi__jpeg_load file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004c9d3b> [func:stbi__load_main file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004c4af2> [func:stbi__load_flip file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004c51f5> [func:stbi_load_from_memory file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004c9aea> [func:main file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00007ffff7c470b3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000000000041c5ee> [func:_start file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+=====================================================================
+=====================================================================
+TIME: 2021-11-20.14:20:51
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 1 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : stb-image ___FILE___ 
+CRASH:
+DESCRIPTION: AddressSanitizer: heap-buffer-overflow on address 0x602000000011 at pc 0x0000004d4618 bp 0x7fffffffc770 sp 0x7fffffffc768
+ORIG_FNAME: 7a7aaed9fbf4734246429fcfe486d85c.00000054.honggfuzz.cov
+FUZZ_FNAME: /home/ties/ru/SS/assignment_2/software-security-fuzzing/build/SIGABRT.PC.4d4618.STACK.ce1bc19d9.CODE.-6.ADDR.0.INSTR.mov____0x128(%rbx),%rax.fuzz
+PID: 176078
+SIGNAL: SIGABRT (6)
+PC: 0x4d4618
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x128(%rbx),%rax
+STACK HASH: 0000000ce1bc19d9
+STACK:
+ <0x00000000004d4617> [func:stbi__tga_load file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4d4617]
+ <0x00000000004ca1bd> [func:stbi__load_main file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4ca1bd]
+ <0x00000000004c4af1> [func:stbi__load_flip file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c4af1]
+ <0x00000000004c51f4> [func:stbi_load_from_memory file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c51f4]
+ <0x00000000004c9ae9> [func:main file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c9ae9]
+ <0x00007ffff7c470b2> [func:__libc_start_main file:/build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c line:308 module:]
+ <0x000000000041c5ed> [func:_start file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x41c5ed]
+=====================================================================
+=====================================================================
+TIME: 2021-11-20.14:22:03
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 1 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : stb-image ___FILE___ 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: ff23354c39a82274801d4273775db8e6.000000e6.honggfuzz.cov
+FUZZ_FNAME: /home/ties/ru/SS/assignment_2/software-security-fuzzing/build/SIGABRT.PC.7ffff7c6618b.STACK.1a9f936eb7.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 201550
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c6618b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000001a9f936eb7
+STACK:
+ <0x00007ffff7c45859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x00007ffff7c45729> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x00007ffff7c56f36> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x00000000004f3ea2> [func:stbi__extend_receive file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004f0d4b> [func:stbi__jpeg_decode_block_prog_dc file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004edad2> [func:stbi__parse_entropy_coded_data file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004e8c9f> [func:stbi__decode_jpeg_image file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004e545a> [func:load_jpeg_image file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004ca4de> [func:stbi__jpeg_load file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004c9d3b> [func:stbi__load_main file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004c4af2> [func:stbi__load_flip file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004c51f5> [func:stbi_load_from_memory file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004c9aea> [func:main file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00007ffff7c470b3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000000000041c5ee> [func:_start file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+=====================================================================
+=====================================================================
+TIME: 2021-11-20.14:23:45
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 1 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : stb-image ___FILE___ 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 8c0f0d2e049c3f2bdd9acb51037abf37.00000150.honggfuzz.cov
+FUZZ_FNAME: /home/ties/ru/SS/assignment_2/software-security-fuzzing/build/SIGABRT.PC.7ffff7c6618b.STACK.f5d067eab.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 213723
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c6618b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000000f5d067eab
+STACK:
+ <0x00007ffff7c45859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x00007ffff7c45729> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x00007ffff7c56f36> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x00000000004f3ea2> [func:stbi__extend_receive file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004f0d4b> [func:stbi__jpeg_decode_block_prog_dc file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004ee7c9> [func:stbi__parse_entropy_coded_data file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004e8c9f> [func:stbi__decode_jpeg_image file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004e545a> [func:load_jpeg_image file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004ca4de> [func:stbi__jpeg_load file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004c9d3b> [func:stbi__load_main file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004c4af2> [func:stbi__load_flip file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004c51f5> [func:stbi_load_from_memory file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004c9aea> [func:main file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00007ffff7c470b3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000000000041c5ee> [func:_start file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+=====================================================================
+=====================================================================
+TIME: 2021-11-20.14:41:11
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 1 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : stb-image ___FILE___ 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 884627dfec3516777e80d5e3e24f1665.000000f7.honggfuzz.cov
+FUZZ_FNAME: /home/ties/ru/SS/assignment_2/software-security-fuzzing/build/SIGABRT.PC.7ffff7c6618b.STACK.fd3f4a558.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 369351
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c6618b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000000fd3f4a558
+STACK:
+ <0x00007ffff7c45859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x00007ffff7c45729> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x00007ffff7c56f36> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x00000000004f3ea2> [func:stbi__extend_receive file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004efaf8> [func:stbi__jpeg_decode_block file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004ec04b> [func:stbi__parse_entropy_coded_data file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004e8c9f> [func:stbi__decode_jpeg_image file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004e545a> [func:load_jpeg_image file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004ca4de> [func:stbi__jpeg_load file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004c9d3b> [func:stbi__load_main file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004c4af2> [func:stbi__load_flip file:main.c line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004c51f5> [func:stbi_load_from_memory file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00000000004c9aea> [func:main file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+ <0x00007ffff7c470b3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000000000041c5ee> [func:_start file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image]
+=====================================================================
+=====================================================================
+TIME: 2021-11-20.15:41:43
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 1 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : stb-image ___FILE___ 
+CRASH:
+DESCRIPTION: AddressSanitizer: negative-size-param: (size=-1431659470)
+ORIG_FNAME: 892cbb077ead4d9bb87ee119c1dde279.0000009c.honggfuzz.cov
+FUZZ_FNAME: /home/ties/ru/SS/assignment_2/software-security-fuzzing/build/SIGABRT.PC.7ffff7c6618b.STACK.1bb74e0820.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 794731
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c6618b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000001bb74e0820
+STACK:
+ <0x0000000000433258> [func:memcpy file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x433258]
+ <0x00000000004fc9d8> [func:stbi__getn file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4fc9d8]
+ <0x00000000004d1136> [func:stbi__pnm_load file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4d1136]
+ <0x00000000004c9f5c> [func:stbi__load_main file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c9f5c]
+ <0x00000000004c4af1> [func:stbi__load_flip file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c4af1]
+ <0x00000000004c51f4> [func:stbi_load_from_memory file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c51f4]
+ <0x00000000004c9ae9> [func:main file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c9ae9]
+ <0x00007ffff7c470b2> [func:__libc_start_main file:/build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c line:308 module:]
+ <0x000000000041c5ed> [func:_start file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x41c5ed]
+=====================================================================
+=====================================================================
+TIME: 2021-11-20.16:20:52
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 5
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 1 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : stb-image ___FILE___ 
+CRASH:
+DESCRIPTION: AddressSanitizer: heap-buffer-overflow on address 0x602000000014 at pc 0x0000004cfa20 bp 0x7fffffffc860 sp 0x7fffffffc858
+ORIG_FNAME: da18ff6646a19f240130d1997dc6b3a0.000000fa.honggfuzz.cov
+FUZZ_FNAME: /home/ties/ru/SS/assignment_2/software-security-fuzzing/build/SIGABRT.PC.4cfa20.STACK.c38730803.CODE.-6.ADDR.0.INSTR.mov____-0x1a8(%rbp),%rax.fuzz
+PID: 1070163
+SIGNAL: SIGABRT (6)
+PC: 0x4cfa20
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____-0x1a8(%rbp),%rax
+STACK HASH: 0000000c38730803
+STACK:
+ <0x00000000004cfa1f> [func:stbi__psd_load file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4cfa1f]
+ <0x00000000004c9ea6> [func:stbi__load_main file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c9ea6]
+ <0x00000000004c4af1> [func:stbi__load_flip file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c4af1]
+ <0x00000000004c51f4> [func:stbi_load_from_memory file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c51f4]
+ <0x00000000004c9ae9> [func:main file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c9ae9]
+ <0x00007ffff7c470b2> [func:__libc_start_main file:/build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c line:308 module:]
+ <0x000000000041c5ed> [func:_start file: line:0 module:/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x41c5ed]
+=====================================================================

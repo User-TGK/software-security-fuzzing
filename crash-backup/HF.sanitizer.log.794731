@@ -1,0 +1,20 @@
+=================================================================
+==794731==ERROR: AddressSanitizer: negative-size-param: (size=-1431659470)
+    #0 0x433258 in memcpy (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x433258)
+    #1 0x4fc9d8 in stbi__getn (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4fc9d8)
+    #2 0x4d1136 in stbi__pnm_load (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4d1136)
+    #3 0x4c9f5c in stbi__load_main (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c9f5c)
+    #4 0x4c4af1 in stbi__load_flip (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c4af1)
+    #5 0x4c51f4 in stbi_load_from_memory (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c51f4)
+    #6 0x4c9ae9 in main (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c9ae9)
+    #7 0x7ffff7c470b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+    #8 0x41c5ed in _start (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x41c5ed)
+
+0x60d00000006c is located 44 bytes inside of 144-byte region [0x60d000000040,0x60d0000000d0)
+allocated by thread T0 here:
+    #0 0x494d2d in malloc (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x494d2d)
+    #1 0x4c9788 in main (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x4c9788)
+    #2 0x7ffff7c470b2 in __libc_start_main /build/glibc-eX1tMB/glibc-2.31/csu/../csu/libc-start.c:308:16
+
+SUMMARY: AddressSanitizer: negative-size-param (/home/ties/ru/SS/assignment_2/software-security-fuzzing/build/stb-image+0x433258) in memcpy
+==794731==ABORTING
