@@ -13,7 +13,7 @@ hangs
 
 ### Radamsa ###
 
-radamsa-output
+radamsa_output/*/fuzz/
 
 ### C ###
 # Prerequisites

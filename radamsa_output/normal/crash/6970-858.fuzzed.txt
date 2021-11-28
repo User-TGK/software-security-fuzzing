@@ -1,0 +1,1 @@
+stb-image: /home/koen/fuzzing-project/software-security-fuzzing/stb_image/stb_image_2016.h:1672: stbi__extend_receive: Assertion `n >= 0 && n < (int) (sizeof(stbi__bmask)/sizeof(*stbi__bmask))' failed.
